@@ -62,7 +62,3 @@ def get_etf_holdings():
             print(ex)
     browser.quit()
     return pd.DataFrame(asset_dict)
-
-constituent = get_etf_holdings()
-
-constituent.T
