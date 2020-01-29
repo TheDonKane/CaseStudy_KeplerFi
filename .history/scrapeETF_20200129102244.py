@@ -9,7 +9,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.webdriver import WebDriver
 from webdriver_manager.chrome import ChromeDriverManager
 import warnings
-
+import quandl
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 asset_dict = {} 

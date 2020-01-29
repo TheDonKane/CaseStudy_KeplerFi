@@ -40,11 +40,10 @@ def get_etf_holdings():
     browser.get(url)
     html = browser.page_source
     soup = BeautifulSoup(html, 'html')
-    table = get_table(soup)
 
     # Reads the holdings table line by line and appends each asset to a
     # dictionary along with the holdings percentage
-    for row in table.select('tr')[1:26]:
+    for row in get_table(soup).select('tr')[1:26]:
         try:
             cells = row.select('td')
             # print(row)
