@@ -11,8 +11,8 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 from webdriver_manager.chrome import ChromeDriverManager
 import warnings
 
+driver = webdriver.Chrome()
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
 asset_dict = {} 
 
 warnings.filterwarnings('ignore')
